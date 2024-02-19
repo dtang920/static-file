@@ -1,0 +1,70 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://rspec.info/images/logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tests",
+                            "wrap": true,
+                            "size": "Medium",
+                            "weight": "Bolder",
+                            "isSubtle": false,
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Total:",
+                                            "wrap": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch"
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Failures: ",
+                                            "wrap": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ],
+            "style": "default"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.6"
+}
