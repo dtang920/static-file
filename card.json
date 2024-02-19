@@ -9,8 +9,8 @@
           "items": [
             {
               "type": "Image",
-              "url": "https://www.kindpng.com/picc/m/356-3561262_free-download-png-and-vector-icon-logo-git.png",
-              "size": "small"
+              "url": "https://rspec.info/images/logo.png",
+              "size": "medium"
             }
           ],
           "width": "auto"
@@ -20,12 +20,12 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "Plugin: Gitleaks",
+              "text": "Tests",
               "wrap": true,
-              "size": "small",
+              "size": "medium",
               "weight": "bolder",
               "isSubtle": false,
-              "spacing": "small"
+              "spacing": "medium"
             },
             {
               "type": "TextBlock",
