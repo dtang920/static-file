@@ -21,7 +21,7 @@
                         {
                             "type": "TextBlock",
                             "text": "Tests",
-                            "size": "Large",
+                            "size": "ExtraLarge",
                             "weight": "Bolder",
                             "isSubtle": false,
                             "spacing": "Medium",
@@ -61,15 +61,15 @@
                                 },
                                 {
                                     "type": "Column",
-                                    "width": "stretch",
+                                    "width": "auto",
                                     "items": [
                                         {
                                             "type": "TextBlock",
                                             "text": "Time: ${time}",
-                                            "size": "big",
+                                            "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
-                                            "spacing": "Small"
+                                            "spacing": "Medium"
                                         }
                                     ]
                                 }
