@@ -40,7 +40,8 @@
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
-                                            "spacing": "Medium"
+                                            "spacing": "Medium",
+                                            "horizontalAlignment": "Left"
                                         }
                                     ]
                                 },
@@ -55,7 +56,8 @@
                                             "weight": "Bolder",
                                             "isSubtle": false,
                                             "spacing": "Medium",
-                                            "color": "Attention"
+                                            "color": "Attention",
+                                            "horizontalAlignment": "Left"
                                         }
                                     ]
                                 },
@@ -69,11 +71,13 @@
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
-                                            "spacing": "Medium"
+                                            "spacing": "Medium",
+                                            "horizontalAlignment": "Left"
                                         }
                                     ]
                                 }
-                            ]
+                            ],
+                            "horizontalAlignment": "Left"
                         }
                     ],
                     "width": "stretch"
@@ -89,6 +93,9 @@
                 {
                     "type": "Column",
                     "items": [
+                        {
+                            "type": "Container"
+                        },
                         {
                             "type": "RichTextBlock",
                             "inlines": [
