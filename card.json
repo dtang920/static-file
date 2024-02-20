@@ -36,7 +36,7 @@
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Total: ${tests}",
+                                            "text": "${tests}",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -80,7 +80,31 @@
                 }
             ],
             "style": "default"
+        },
+    {
+      "type": "ColumnSet",
+      "style": "default",
+      "separator": true,
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "FactSet",
+              "facts": [
+                {
+                  "title": "File:",
+                  "value": "${file}"
+                }
+              ],
+              "separator": true,
+              "$data": "${testcases}"
+            }
+          ],
+          "width": "stretch"
         }
+      ]
+    }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.6"
