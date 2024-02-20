@@ -46,7 +46,7 @@
                                 },
                                 {
                                     "type": "Column",
-                                    "width": "stretch",
+                                    "width": "auto",
                                     "items": [
                                         {
                                             "type": "TextBlock",
