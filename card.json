@@ -9,8 +9,8 @@
           "items": [
             {
               "type": "Image",
-              "url": "https://rspec.info/images/logo.png",
-              "size": "medium"
+              "url": "https://www.kindpng.com/picc/m/356-3561262_free-download-png-and-vector-icon-logo-git.png",
+              "size": "small"
             }
           ],
           "width": "auto"
@@ -20,16 +20,16 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "Tests",
+              "text": "Plugin: Gitleaks",
               "wrap": true,
-              "size": "medium",
+              "size": "small",
               "weight": "bolder",
               "isSubtle": false,
-              "spacing": "medium"
+              "spacing": "small"
             },
             {
               "type": "TextBlock",
-              "text": "Number of Issues: ${tests}",
+              "text": "Number of Issues: ${NumIssues}",
               "wrap": true,
               "size": "Small",
               "weight": "Lighter",
@@ -54,24 +54,40 @@
               "type": "FactSet",
               "facts": [
                 {
-                  "title": "Name:",
-                  "value": "${name}"
-                },
-                {
-                  "title": "Time:",
-                  "value": "${formatNumber(time, 0)}"
-                },
-                {
-                  "title": "Classname:",
-                  "value": "${classname}"
-                },
-                {
                   "title": "File:",
                   "value": "${file}"
+                },
+                {
+                  "title": "Line:",
+                  "value": "${formatNumber(lineNumber, 0)}"
+                },
+                {
+                  "title": "Commit:",
+                  "value": "${commit}"
+                },
+                {
+                  "title": "Rule:",
+                  "value": "${rule}"
+                },
+                {
+                  "title": "Commit:",
+                  "value": "${commitMessage}"
+                },
+                {
+                  "title": "Author:",
+                  "value": "${author}"
+                },
+                {
+                  "title": "Email:",
+                  "value": "${email}"
+                },
+                {
+                  "title": "Date:",
+                  "value": "${date}"
                 }
               ],
               "separator": true,
-              "$data": "${testcases}"
+              "$data": "${issues}"
             }
           ],
           "width": "stretch"
