@@ -96,7 +96,14 @@
                         {
                             "type": "Container",
                             "separator": true,
-                            "$data": "${testcases}"
+                            "$data": "${testcases}",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${file}",
+                                    "wrap": true
+                                }
+                            ]
                         }
                     ],
                     "width": "stretch"
