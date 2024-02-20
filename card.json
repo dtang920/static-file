@@ -29,7 +29,7 @@
             },
             {
               "type": "TextBlock",
-              "text": "Number of Issues: ${NumIssues}",
+              "text": "Number of Issues: ${tests}",
               "wrap": true,
               "size": "Small",
               "weight": "Lighter",
@@ -54,40 +54,24 @@
               "type": "FactSet",
               "facts": [
                 {
+                  "title": "Name:",
+                  "value": "${name}"
+                },
+                {
+                  "title": "Time:",
+                  "value": "${formatNumber(time, 0)}"
+                },
+                {
+                  "title": "Classname:",
+                  "value": "${classname}"
+                },
+                {
                   "title": "File:",
                   "value": "${file}"
-                },
-                {
-                  "title": "Line:",
-                  "value": "${formatNumber(lineNumber, 0)}"
-                },
-                {
-                  "title": "Commit:",
-                  "value": "${commit}"
-                },
-                {
-                  "title": "Rule:",
-                  "value": "${rule}"
-                },
-                {
-                  "title": "Commit:",
-                  "value": "${commitMessage}"
-                },
-                {
-                  "title": "Author:",
-                  "value": "${author}"
-                },
-                {
-                  "title": "Email:",
-                  "value": "${email}"
-                },
-                {
-                  "title": "Date:",
-                  "value": "${date}"
                 }
               ],
               "separator": true,
-              "$data": "${issues}"
+              "$data": "${testcases}"
             }
           ],
           "width": "stretch"
