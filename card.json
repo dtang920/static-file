@@ -84,6 +84,31 @@
                 }
             ],
             "style": "default"
+        },
+        {
+            "type": "ColumnSet",
+            "style": "default",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "separator": true,
+                            "$data": "${testcases}",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${classname}",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ]
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
