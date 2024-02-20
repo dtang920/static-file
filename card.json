@@ -21,11 +21,11 @@
                         {
                             "type": "TextBlock",
                             "text": "Tests",
-                            "wrap": true,
-                            "size": "Medium",
+                            "size": "Large",
                             "weight": "Bolder",
                             "isSubtle": false,
-                            "spacing": "Medium"
+                            "spacing": "Medium",
+                            "horizontalAlignment": "Left"
                         },
                         {
                             "type": "ColumnSet",
@@ -37,11 +37,10 @@
                                         {
                                             "type": "TextBlock",
                                             "text": "Total: ${tests}",
-                                            "wrap": true,
-                                            "size": "Small",
-                                            "weight": "Lighter",
-                                            "isSubtle": true,
-                                            "spacing": "Small"
+                                            "size": "Medium",
+                                            "weight": "Bolder",
+                                            "isSubtle": false,
+                                            "spacing": "Medium"
                                         }
                                     ]
                                 },
@@ -52,11 +51,11 @@
                                         {
                                             "type": "TextBlock",
                                             "text": "Failures: ${failures}",
-                                            "wrap": true,
-                                            "size": "Small",
-                                            "weight": "Lighter",
-                                            "isSubtle": true,
-                                            "spacing": "Small"
+                                            "size": "Medium",
+                                            "weight": "Bolder",
+                                            "isSubtle": false,
+                                            "spacing": "Medium",
+                                            "color": "Attention"
                                         }
                                     ]
                                 },
@@ -67,10 +66,9 @@
                                         {
                                             "type": "TextBlock",
                                             "text": "Time: ${time}",
-                                            "wrap": true,
-                                            "size": "Small",
-                                            "weight": "Lighter",
-                                            "isSubtle": true,
+                                            "size": "big",
+                                            "weight": "Bolder",
+                                            "isSubtle": false,
                                             "spacing": "Small"
                                         }
                                     ]
