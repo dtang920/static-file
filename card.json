@@ -100,7 +100,7 @@
                             "items": [
                                 {
                                     "type": "TextBlock",
-                                    "text": "${file}",
+                                    "text": "${classname}",
                                     "wrap": true
                                 }
                             ]
