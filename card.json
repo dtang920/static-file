@@ -90,23 +90,11 @@
                     "type": "Column",
                     "items": [
                         {
-                            "type": "FactSet",
-                            "facts": [
+                            "type": "RichTextBlock",
+                            "inlines": [
                                 {
-                                    "title": "Name:",
-                                    "value": "${name}"
-                                },
-                                {
-                                    "title": "Classname:",
-                                    "value": "${classname}"
-                                },
-                                {
-                                    "title": "File:",
-                                    "value": "${file}"
-                                },
-                                {
-                                    "title": "Time:",
-                                    "value": "${time}"
+                                    "type": "TextRun",
+                                    "text": "${file}"
                                 }
                             ],
                             "separator": true,
