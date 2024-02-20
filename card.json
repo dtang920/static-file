@@ -1,48 +1,89 @@
 {
     "type": "AdaptiveCard",
     "body": [
-      {
-        "type": "ColumnSet",
-        "columns": [
-          {
-            "type": "Column",
-            "items": [
-              {
-                "type": "Image",
-                "url": "https://rspec.info/images/logo.png",
-                "size": "medium"
-              }
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://rspec.info/images/logo.png",
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tests",
+                            "wrap": true,
+                            "size": "Medium",
+                            "weight": "Bolder",
+                            "isSubtle": false,
+                            "spacing": "Medium"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Total: ${tests}",
+                                            "wrap": true,
+                                            "size": "Small",
+                                            "weight": "Lighter",
+                                            "isSubtle": true,
+                                            "spacing": "Small"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Failures: ${failures}",
+                                            "wrap": true,
+                                            "size": "Small",
+                                            "weight": "Lighter",
+                                            "isSubtle": true,
+                                            "spacing": "Small"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Time: ${time}",
+                                            "wrap": true,
+                                            "size": "Small",
+                                            "weight": "Lighter",
+                                            "isSubtle": true,
+                                            "spacing": "Small"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "stretch"
+                }
             ],
-            "width": "auto"
-          },
-          {
-            "type": "Column",
-            "items": [
-              {
-                "type": "TextBlock",
-                "text": "Tests",
-                "wrap": true,
-                "size": "medium",
-                "weight": "bolder",
-                "isSubtle": false,
-                "spacing": "medium"
-              },
-              {
-                "type": "TextBlock",
-                "text": "Number of Issues: ${tests}",
-                "wrap": true,
-                "size": "Small",
-                "weight": "Lighter",
-                "isSubtle": true,
-                "spacing": "Small"
-              }
-            ],
-            "width": "stretch"
-          }
-        ],
-        "style": "default"
-      }
+            "style": "default"
+        }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.5"
-  }
+    "version": "1.6"
+}
