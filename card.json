@@ -94,16 +94,7 @@
                     "type": "Column",
                     "items": [
                         {
-                            "type": "Container"
-                        },
-                        {
-                            "type": "RichTextBlock",
-                            "inlines": [
-                                {
-                                    "type": "TextRun",
-                                    "text": "${file}"
-                                }
-                            ],
+                            "type": "Container",
                             "separator": true,
                             "$data": "${testcases}"
                         }
