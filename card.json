@@ -100,7 +100,7 @@
                             "items": [
                                 {
                                     "type": "TextBlock",
-                                    "text": "${classname}",
+                                    "text": "${testcases[0].classname}",
                                     "wrap": true
                                 }
                             ]
