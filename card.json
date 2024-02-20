@@ -81,30 +81,42 @@
             ],
             "style": "default"
         },
-    {
-      "type": "ColumnSet",
-      "style": "default",
-      "separator": true,
-      "columns": [
         {
-          "type": "Column",
-          "items": [
-            {
-              "type": "FactSet",
-              "facts": [
+            "type": "ColumnSet",
+            "style": "default",
+            "separator": true,
+            "columns": [
                 {
-                  "title": "File:",
-                  "value": "${file}"
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "FactSet",
+                            "facts": [
+                                {
+                                    "title": "Name:",
+                                    "value": "${name}"
+                                },
+                                {
+                                    "title": "Classname:",
+                                    "value": "${classname}"
+                                },
+                                {
+                                    "title": "File:",
+                                    "value": "${file}"
+                                },
+                                {
+                                    "title": "Time:",
+                                    "value": "${time}"
+                                }
+                            ],
+                            "separator": true,
+                            "$data": "${testcases}"
+                        }
+                    ],
+                    "width": "stretch"
                 }
-              ],
-              "separator": true,
-              "$data": "${testcases}"
-            }
-          ],
-          "width": "stretch"
+            ]
         }
-      ]
-    }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.6"
