@@ -1,146 +1,36 @@
 {
-    "type": "AdaptiveCard",
-    "body": [
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Click to toggle visibility",
+      "isVisible": true
+    },
+    {
+      "type": "Container",
+      "items": [
         {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "items": [
-                        {
-                            "type": "Image",
-                            "url": "https://rspec.info/images/logo.png",
-                            "size": "Medium"
-                        }
-                    ],
-                    "width": "auto"
-                },
-                {
-                    "type": "Column",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "Tests",
-                            "size": "ExtraLarge",
-                            "weight": "Bolder",
-                            "isSubtle": false,
-                            "spacing": "Medium",
-                            "horizontalAlignment": "Left"
-                        },
-                        {
-                            "type": "ColumnSet",
-                            "columns": [
-                                {
-                                    "type": "Column",
-                                    "width": "stretch",
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "Total: ${tests}",
-                                            "size": "Medium",
-                                            "weight": "Bolder",
-                                            "isSubtle": false,
-                                            "spacing": "Medium",
-                                            "horizontalAlignment": "Left"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "Column",
-                                    "width": "auto",
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "Failures: ${failures}",
-                                            "size": "Medium",
-                                            "weight": "Bolder",
-                                            "isSubtle": false,
-                                            "spacing": "Medium",
-                                            "color": "Attention",
-                                            "horizontalAlignment": "Left"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "Column",
-                                    "width": "auto",
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "Time: ${time}",
-                                            "size": "Medium",
-                                            "weight": "Bolder",
-                                            "isSubtle": false,
-                                            "spacing": "Medium",
-                                            "horizontalAlignment": "Left"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "horizontalAlignment": "Left"
-                        }
-                    ],
-                    "width": "stretch"
-                }
-            ],
-            "style": "default"
+          "type": "TextBlock",
+          "text": "This text is visible",
+          "isVisible": true
         },
         {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Container",
-                            "$data": "${testcases}",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "${name}",
-                                    "size": "Medium",
-                                    "wrap": true
-                                },
-                                {
-                                    "type": "TextBlock",
-                                    "text": "${classname}",
-                                    "isSubtle": true,
-                                    "size": "Medium"
-                                },
-                                {
-                                    "type": "TextBlock",
-                                    "text": "${file}",
-                                    "isSubtle": true,
-                                    "size": "Medium"
-                                },
-                                {
-                                    "type": "Container",
-                                    "isVisible": false,
-                                    "selectAction": {
-                                        "type": "Action.ToggleVisibility",
-                                        "role": "Link"
-                                    },
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "${failure.message}",
-                                            "wrap": true
-                                        }
-                                    ]
-                                }
-                            ],
-                            "separator": true,
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "role": "Link"
-                            }
-                        }
-                    ]
-                }
-            ]
+          "type": "TextBlock",
+          "text": "This text is hidden",
+          "isVisible": false
         }
-    ],
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.6"
+      ],
+      "isVisible": true,
+      "actions": [
+        {
+          "type": "Action.ToggleVisibility",
+          "title": "Toggle",
+          "targetElements": [
+            "textBlockVisible",
+            "textBlockHidden"
+          ]
+        }
+      ]
+    }
+  ]
 }
