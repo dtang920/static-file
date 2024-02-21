@@ -116,13 +116,7 @@
                                     "isVisible": false
                                 }
                             ],
-                            "separator": true,
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "role": "MenuItem",
-                                "title": "toggle",
-                                "tooltip": "show some tips"
-                            }
+                            "separator": true
                         }
                     ]
                 }
