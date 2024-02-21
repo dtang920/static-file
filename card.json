@@ -95,7 +95,6 @@
                         {
                             "type": "Container",
                             "$data": "${testcases}",
-                            "seperator": true,
                             "items": [
                                 {
                                     "type": "TextBlock",
@@ -108,7 +107,8 @@
                                     "isSubtle": true,
                                     "size": "Medium"
                                 }
-                            ]
+                            ],
+                            "separator": true
                         }
                     ]
                 }
