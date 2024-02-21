@@ -92,18 +92,17 @@
             "columns": [
                 {
                     "type": "Column",
+                    "$data": "${testcases}",
                     "items": [
                         {
-                            "type": "Container",
-                            "separator": true,
-                            "$data": "${testcases}",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "${testcases[0].classname}",
-                                    "wrap": true
-                                }
-                            ]
+                            "type": "TextBlock",
+                            "text": "${classname}",
+                            "wrap": false
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${name}",
+                            "wrap": false
                         }
                     ],
                     "width": "stretch"
