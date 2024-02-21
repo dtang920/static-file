@@ -99,13 +99,14 @@
                             "items": [
                                 {
                                     "type": "TextBlock",
-                                    "text": "New TextBlock",
-                                    "wrap": false
+                                    "text": "${name}",
+                                    "size": "Medium"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "New TextBlock",
-                                    "wrap": false
+                                    "text": "${classname}",
+                                    "isSubtle": true,
+                                    "size": "Medium"
                                 }
                             ]
                         }
