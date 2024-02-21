@@ -114,10 +114,14 @@
                                     "text": "${file}",
                                     "isSubtle": true,
                                     "size": "Medium",
-                                    "isVisible": false
+                                    "isVisible": "${failure != null}"
                                 }
                             ],
-                            "separator": true
+                            "separator": true,
+                            "selectAction": {
+                                "type": "Action.ToggleVisibility",
+                                "role": "MenuItem"
+                            }
                         }
                     ]
                 }
