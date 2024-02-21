@@ -100,7 +100,8 @@
                                     "type": "TextBlock",
                                     "text": "${name}",
                                     "size": "Medium",
-                                    "wrap": true
+                                    "wrap": true,
+                                    "color": "${if(failure == null, 'default', 'attention')}"
                                 },
                                 {
                                     "type": "TextBlock",
