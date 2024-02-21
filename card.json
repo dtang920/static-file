@@ -86,19 +86,30 @@
             "style": "default"
         },
         {
-            "type": "Container",
-            "$data": "${testcases}",
-            "seperator": true,
-            "items": [
+            "type": "ColumnSet",
+            "columns": [
                 {
-                    "type": "TextBlock",
-                    "text": "${name}",
-                    "wrap": false
-                },
-                {
-                    "type": "TextBlock",
-                    "text": "${classname}",
-                    "wrap": false
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "$data": "${testcases}",
+                            "seperator": true,
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "New TextBlock",
+                                    "wrap": false
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "New TextBlock",
+                                    "wrap": false
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
