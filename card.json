@@ -112,24 +112,16 @@
                                     "type": "TextBlock",
                                     "text": "${file}",
                                     "isSubtle": true,
-                                    "size": "Medium"
-                                },
-                                {
-                                    "type": "Container",
-                                    "isVisible": false,
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "${failure.message}",
-                                            "wrap": true
-                                        }
-                                    ]
+                                    "size": "Medium",
+                                    "isVisible": false
                                 }
                             ],
                             "separator": true,
                             "selectAction": {
                                 "type": "Action.ToggleVisibility",
-                                "role": "MenuItem"
+                                "role": "MenuItem",
+                                "title": "toggle",
+                                "tooltip": "show some tips"
                             }
                         }
                     ]
