@@ -99,7 +99,8 @@
                                 {
                                     "type": "TextBlock",
                                     "text": "${name}",
-                                    "size": "Medium"
+                                    "size": "Medium",
+                                    "wrap": true
                                 },
                                 {
                                     "type": "TextBlock",
