@@ -109,10 +109,17 @@
                                     "size": "Medium"
                                 },
                                 {
+                                    "type": "TextBlock",
+                                    "text": "${file}",
+                                    "isSubtle": true,
+                                    "size": "Medium"
+                                },
+                                {
                                     "type": "Container",
                                     "isVisible": false,
                                     "selectAction": {
-                                        "type": "Action.ToggleVisibility"
+                                        "type": "Action.ToggleVisibility",
+                                        "role": "Link"
                                     },
                                     "items": [
                                         {
@@ -123,7 +130,11 @@
                                     ]
                                 }
                             ],
-                            "separator": true
+                            "separator": true,
+                            "selectAction": {
+                                "type": "Action.ToggleVisibility",
+                                "role": "Link"
+                            }
                         }
                     ]
                 }
