@@ -107,6 +107,20 @@
                                     "text": "${classname}",
                                     "isSubtle": true,
                                     "size": "Medium"
+                                },
+                                {
+                                    "type": "Container",
+                                    "isVisible": false,
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility"
+                                    },
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "${failure.message}",
+                                            "wrap": true
+                                        }
+                                    ]
                                 }
                             ],
                             "separator": true
