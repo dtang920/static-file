@@ -46,11 +46,12 @@
                             "columns": [
                                 {
                                     "type": "Column",
-                                    "width": "10px",
+                                    "width": "20px",
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "&lt;"
+                                            "text": "&lt;",
+                                            "horizontalAlignment": "Center"
                                         }
                                     ],
                                     "verticalContentAlignment": "Center",
@@ -61,8 +62,7 @@
                                             "img_set_4",
                                             "img_set_1"
                                         ]
-                                    },
-                                    "separator": true
+                                    }
                                 },
                                 {
                                     "type": "Column",
@@ -80,7 +80,7 @@
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Name: ${name}",
+                                                                    "text": "TestSuite: ${name}",
                                                                     "size": "Medium",
                                                                     "weight": "Bolder"
                                                                 }
@@ -173,7 +173,6 @@
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 }
-                                                                
                                                             ]
                                                         }
                                                     ],
@@ -187,11 +186,12 @@
                                 },
                                 {
                                     "type": "Column",
-                                    "width": "10px",
+                                    "width": "20px",
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "&gt;"
+                                            "text": "&gt;",
+                                            "horizontalAlignment": "Center"
                                         }
                                     ],
                                     "verticalContentAlignment": "Center",
@@ -202,11 +202,9 @@
                                             "img_set_1",
                                             "img_set_2"
                                         ]
-                                    },
-                                    "separator": true
+                                    }
                                 }
-                            ],
-                            "horizontalAlignment": "Center"
+                            ]
                         }
                     ],
                     "minHeight": "1px",
