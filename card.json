@@ -47,13 +47,6 @@
                                 {
                                     "type": "Column",
                                     "width": "20px",
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "&lt;",
-                                            "horizontalAlignment": "Center"
-                                        }
-                                    ],
                                     "verticalContentAlignment": "Center",
                                     "selectAction": {
                                         "type": "Action.ToggleVisibility",
@@ -62,7 +55,8 @@
                                             "img_set_4",
                                             "img_set_1"
                                         ]
-                                    }
+                                    },
+                                    "style": "emphasis"
                                 },
                                 {
                                     "type": "Column",
@@ -154,21 +148,21 @@
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "${failure.message}",
+                                                                    "text": "Message: ${failure.message}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "${failure.type}",
+                                                                    "text": "Type: ${failure.type}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "${failure.text}",
+                                                                    "text": "Tracking: ${failure.text}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
@@ -187,13 +181,6 @@
                                 {
                                     "type": "Column",
                                     "width": "20px",
-                                    "items": [
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "&gt;",
-                                            "horizontalAlignment": "Center"
-                                        }
-                                    ],
                                     "verticalContentAlignment": "Center",
                                     "selectAction": {
                                         "type": "Action.ToggleVisibility",
@@ -202,7 +189,8 @@
                                             "img_set_1",
                                             "img_set_2"
                                         ]
-                                    }
+                                    },
+                                    "style": "emphasis"
                                 }
                             ]
                         }
