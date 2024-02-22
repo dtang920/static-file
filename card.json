@@ -42,9 +42,8 @@
                     "type": "CarouselPage",
                     "items": [
                         {
-                            "type": "Image",
-                            "url": "https://picsum.photos/id/110/300/300",
-                            "altText": "sunset"
+                            "type": "TextBlock",
+                            "text": "sunset"
                         },
                         {
                             "type": "ColumnSet",
@@ -132,9 +131,8 @@
                     "type": "CarouselPage",
                     "items": [
                         {
-                            "type": "Image",
-                            "url": "https://picsum.photos/id/110/300/300",
-                            "altText": "sunset"
+                            "type": "TextBlock",
+                            "text": "sunset"
                         },
                         {
                             "type": "ColumnSet",
