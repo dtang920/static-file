@@ -154,21 +154,21 @@
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Message: ${failure.message}",
+                                                                    "text": "${failure.message}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Type: ${failure.type}",
+                                                                    "text": "${failure.type}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Tracking: ${failure.text}",
+                                                                    "text": "${failure.text}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
