@@ -143,14 +143,14 @@
                                                     "items": [
                                                         {
                                                             "type": "TextBlock",
-                                                            "text": "${name}",
+                                                            "text": "Name: ${name}",
                                                             "size": "Medium",
                                                             "wrap": true,
                                                             "color": "${if(failure == null, 'default', 'attention')}"
                                                         },
                                                         {
                                                             "type": "TextBlock",
-                                                            "text": "${classname}",
+                                                            "text": "Classname: ${classname}",
                                                             "isSubtle": true,
                                                             "size": "Medium"
                                                         },
@@ -158,8 +158,32 @@
                                                             "type": "TextBlock",
                                                             "text": "${file}",
                                                             "isSubtle": true,
-                                                            "size": "Medium",
-                                                            "isVisible": "${failure != null}"
+                                                            "size": "Medium"
+                                                        },
+                                                        {
+                                                            "type": "Container",
+                                                            "$when": "${failure != null}",
+                                                            "items": [
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "Message: ${failure.message}",
+                                                                    "size": "Small",
+                                                                    "wrap": true
+                                                                },
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "Type: ${failure.type}",
+                                                                    "size": "Small",
+                                                                    "wrap": true
+                                                                },
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "Tracking: ${failure.text}",
+                                                                    "size": "Small",
+                                                                    "wrap": true
+                                                                }
+                                                                
+                                                            ]
                                                         }
                                                     ],
                                                     "separator": true,
