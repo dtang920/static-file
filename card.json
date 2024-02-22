@@ -52,7 +52,7 @@
                                         "type": "Action.ToggleVisibility",
                                         "title": "Previous",
                                         "targetElements": [
-                                            "img_set_4",
+                                            "img_set_2",
                                             "img_set_1"
                                         ]
                                     },
@@ -121,7 +121,7 @@
                                                 },
                                                 {
                                                     "type": "Container",
-                                                    "$data": "${testcases}",
+                                                    "$data": "${ where (testcases, case, case.failure != null) }",
                                                     "items": [
                                                         {
                                                             "type": "TextBlock",
@@ -148,26 +148,27 @@
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Message: ${failure.message}",
+                                                                    "text": "${failure.message}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Type: ${failure.type}",
+                                                                    "text": "${failure.type}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
-                                                                    "text": "Tracking: ${failure.text}",
+                                                                    "text": "${failure.text}",
                                                                     "size": "Small",
                                                                     "isSubtle": true,
                                                                     "wrap": true
                                                                 }
-                                                            ]
+                                                            ],
+                                                            "style": "accent"
                                                         }
                                                     ],
                                                     "separator": true,
@@ -195,7 +196,6 @@
                             ]
                         }
                     ],
-                    "minHeight": "1px",
                     "bleed": true,
                     "spacing": "None",
                     "id": "img_set_1"
