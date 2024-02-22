@@ -82,10 +82,7 @@
                                                                     "type": "TextBlock",
                                                                     "text": "Name: ${name}",
                                                                     "size": "Medium",
-                                                                    "weight": "Bolder",
-                                                                    "isSubtle": false,
-                                                                    "spacing": "Medium",
-                                                                    "horizontalAlignment": "Left"
+                                                                    "weight": "Bolder"
                                                                 }
                                                             ]
                                                         },
@@ -97,10 +94,7 @@
                                                                     "type": "TextBlock",
                                                                     "text": "Total: ${tests}",
                                                                     "size": "Medium",
-                                                                    "weight": "Bolder",
-                                                                    "isSubtle": false,
-                                                                    "spacing": "Medium",
-                                                                    "horizontalAlignment": "Left"
+                                                                    "weight": "Bolder"
                                                                 }
                                                             ]
                                                         },
@@ -113,10 +107,7 @@
                                                                     "text": "Failures: ${failures}",
                                                                     "size": "Medium",
                                                                     "weight": "Bolder",
-                                                                    "isSubtle": false,
-                                                                    "spacing": "Medium",
-                                                                    "color": "Attention",
-                                                                    "horizontalAlignment": "Left"
+                                                                    "color": "Attention"
                                                                 }
                                                             ]
                                                         },
@@ -128,10 +119,7 @@
                                                                     "type": "TextBlock",
                                                                     "text": "Time: ${time}",
                                                                     "size": "Medium",
-                                                                    "weight": "Bolder",
-                                                                    "isSubtle": false,
-                                                                    "spacing": "Medium",
-                                                                    "horizontalAlignment": "Left"
+                                                                    "weight": "Bolder"
                                                                 }
                                                             ]
                                                         }
@@ -168,18 +156,21 @@
                                                                     "type": "TextBlock",
                                                                     "text": "Message: ${failure.message}",
                                                                     "size": "Small",
+                                                                    "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
                                                                     "text": "Type: ${failure.type}",
                                                                     "size": "Small",
+                                                                    "isSubtle": true,
                                                                     "wrap": true
                                                                 },
                                                                 {
                                                                     "type": "TextBlock",
                                                                     "text": "Tracking: ${failure.text}",
                                                                     "size": "Small",
+                                                                    "isSubtle": true,
                                                                     "wrap": true
                                                                 }
                                                                 
