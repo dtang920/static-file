@@ -5,7 +5,7 @@
     "body": [
         {
             "type": "TextBlock",
-            "text": "${length(root)}",
+            "text": "${root}",
             "wrap": true
         },
         {
