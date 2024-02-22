@@ -1,7 +1,7 @@
 {
     "type": "AdaptiveCard",
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.6",
+    "version": "1.3",
     "body": [
         {
             "type": "ColumnSet",
@@ -61,7 +61,8 @@
                                             "img_set_4",
                                             "img_set_1"
                                         ]
-                                    }
+                                    },
+                                    "separator": true
                                 },
                                 {
                                     "type": "Column",
@@ -186,7 +187,8 @@
                                             "img_set_1",
                                             "img_set_2"
                                         ]
-                                    }
+                                    },
+                                    "separator": true
                                 }
                             ],
                             "horizontalAlignment": "Center"
