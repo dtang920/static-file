@@ -47,6 +47,7 @@
                                 {
                                     "type": "Column",
                                     "width": "stretch",
+                                    "$data": "${root[0]}",
                                     "items": [
                                         {
                                             "type": "TextBlock",
