@@ -50,11 +50,10 @@
                                 {
                                     "type": "Column",
                                     "width": "stretch",
-                                    "$data": "${root[0]}",
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Total: ${tests}",
+                                            "text": "Total: ",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -69,7 +68,7 @@
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Failures: ${failures}",
+                                            "text": "Failures: ",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -85,7 +84,7 @@
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Time: ${time}",
+                                            "text": "Time:",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -99,23 +98,22 @@
                         },
                         {
                             "type": "Container",
-                            "$data": "${testcases}",
                             "items": [
                                 {
                                     "type": "TextBlock",
-                                    "text": "${name}",
+                                    "text": "name",
                                     "size": "Medium",
                                     "wrap": true
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${classname}",
+                                    "text": "classname",
                                     "isSubtle": true,
                                     "size": "Medium"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${file}",
+                                    "text": "file",
                                     "isSubtle": true,
                                     "size": "Medium",
                                     "isVisible": false
@@ -142,7 +140,7 @@
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Total: ${tests}",
+                                            "text": "Total:",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -157,7 +155,7 @@
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Failures: ${failures}",
+                                            "text": "Failures: ",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -173,7 +171,7 @@
                                     "items": [
                                         {
                                             "type": "TextBlock",
-                                            "text": "Time: ${time}",
+                                            "text": "Time:",
                                             "size": "Medium",
                                             "weight": "Bolder",
                                             "isSubtle": false,
@@ -187,23 +185,22 @@
                         },
                         {
                             "type": "Container",
-                            "$data": "${testcases}",
                             "items": [
                                 {
                                     "type": "TextBlock",
-                                    "text": "${name}",
+                                    "text": "name",
                                     "size": "Medium",
                                     "wrap": true
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${classname}",
+                                    "text": "classname",
                                     "isSubtle": true,
                                     "size": "Medium"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${file}",
+                                    "text": "file",
                                     "isSubtle": true,
                                     "size": "Medium",
                                     "isVisible": false
