@@ -4,10 +4,19 @@
     "version": "1.3",
     "body": [
         {
+            "type": "FactSet",
+            "$data": "${root}",
+            "facts": [
+                {
+                    "title": "Fact 1",
+                    "value": "${name}"
+                }
+            ]
+        },
+        {
             "type": "TextBlock",
-            "text": "${root[0].name}",
+            "text": "${length(root)}",
             "wrap": true
-            "$data": "${root}
         },
         {
             "type": "Container",
