@@ -5,257 +5,38 @@
     "body": [
         {
             "type": "Container",
+            "$data": "${root}",
             "items": [
                 {
-                    "type": "ColumnSet",
-                    "columns": [
+                    "type": "Container",
+                    "items": [
                         {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
+                            "type": "ColumnSet",
+                            "columns": [
                                 {
-                                    "type": "TextBlock",
-                                    "text": "&lt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Previous",
-                                "targetElements": [
-                                    "img_set_4",
-                                    "img_set_1"
-                                ]
-                            }
-                        },
-                        {
-                            "type": "Column",
-                            "width": "stretch",
-                            "backgroundImage": {
-                                "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/image-carousel/assets/hololens-pic1.jpg",
-                                "horizontalAlignment": "Center"
-                            },
-                            "minHeight": "240px",
-                            "bleed": true
-                        },
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "${name}",
+                                            "wrap": true
+                                        }
+                                    ]
+                                },
                                 {
-                                    "type": "TextBlock",
-                                    "text": "&gt;"
+                                    "type": "Column",
+                                    "width": "stretch"
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch"
                                 }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Next",
-                                "targetElements": [
-                                    "img_set_1",
-                                    "img_set_2"
-                                ]
-                            }
+                            ]
                         }
-                    ],
-                    "horizontalAlignment": "Center"
+                    ]
                 }
-            ],
-            "minHeight": "1px",
-            "bleed": true,
-            "spacing": "None",
-            "id": "img_set_1"
-        },
-        {
-            "type": "Container",
-            "items": [
-                {
-                    "type": "ColumnSet",
-                    "columns": [
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "&lt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Previous",
-                                "targetElements": [
-                                    "img_set_1",
-                                    "img_set_2"
-                                ]
-                            }
-                        },
-                        {
-                            "type": "Column",
-                            "width": "stretch",
-                            "backgroundImage": {
-                                "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/image-carousel/assets/hololens-pic2.jpg",
-                                "horizontalAlignment": "Center"
-                            },
-                            "minHeight": "240px",
-                            "bleed": true
-                        },
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "&gt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Next",
-                                "targetElements": [
-                                    "img_set_2",
-                                    "img_set_3"
-                                ]
-                            }
-                        }
-                    ],
-                    "horizontalAlignment": "Center"
-                }
-            ],
-            "minHeight": "1px",
-            "bleed": true,
-            "spacing": "None",
-            "isVisible": false,
-            "id": "img_set_2"
-        },
-        {
-            "type": "Container",
-            "items": [
-                {
-                    "type": "ColumnSet",
-                    "columns": [
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "&lt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Previous",
-                                "targetElements": [
-                                    "img_set_2",
-                                    "img_set_3"
-                                ]
-                            }
-                        },
-                        {
-                            "type": "Column",
-                            "width": "stretch",
-                            "backgroundImage": {
-                                "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/image-carousel/assets/hololens-pic3.jpg",
-                                "horizontalAlignment": "Center"
-                            },
-                            "minHeight": "240px",
-                            "bleed": true
-                        },
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "&gt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Next",
-                                "targetElements": [
-                                    "img_set_3",
-                                    "img_set_4"
-                                ]
-                            }
-                        }
-                    ],
-                    "horizontalAlignment": "Center"
-                }
-            ],
-            "minHeight": "1px",
-            "bleed": true,
-            "spacing": "None",
-            "isVisible": false,
-            "id": "img_set_3"
-        },
-        {
-            "type": "Container",
-            "items": [
-                {
-                    "type": "ColumnSet",
-                    "columns": [
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "&lt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Previous",
-                                "targetElements": [
-                                    "img_set_3",
-                                    "img_set_4"
-                                ]
-                            }
-                        },
-                        {
-                            "type": "Column",
-                            "width": "stretch",
-                            "backgroundImage": {
-                                "url": "https://raw.githubusercontent.com/pnp/AdaptiveCards-Templates/main/samples/image-carousel/assets/hololens-pic4.jpg",
-                                "horizontalAlignment": "Center"
-                            },
-                            "minHeight": "240px"
-                        },
-                        {
-                            "type": "Column",
-                            "width": "10px",
-                            "items": [
-                                {
-                                    "type": "TextBlock",
-                                    "text": "&gt;"
-                                }
-                            ],
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Next",
-                                "targetElements": [
-                                    "img_set_4",
-                                    "img_set_1"
-                                ]
-                            }
-                        }
-                    ],
-                    "horizontalAlignment": "Center"
-                }
-            ],
-            "minHeight": "1px",
-            "bleed": true,
-            "spacing": "None",
-            "isVisible": false,
-            "id": "img_set_4"
+            ]
         }
     ]
 }
