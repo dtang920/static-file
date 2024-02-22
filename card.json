@@ -10,7 +10,7 @@
                         {
                             "type": "Image",
                             "url": "https://rspec.info/images/logo.png",
-                            "size": "Medium"
+                            "size": "Small"
                         }
                     ],
                     "width": "auto"
@@ -26,7 +26,21 @@
                             "isSubtle": false,
                             "spacing": "Medium",
                             "horizontalAlignment": "Left"
-                        },
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ],
+            "style": "default"
+        },
+        {
+            "type": "Carousel",
+            "rtl": false,
+            "$data": "${root}",
+            "pages": [
+                {
+                    "type": "CarouselPage",
+                    "items": [
                         {
                             "type": "ColumnSet",
                             "columns": [
@@ -78,20 +92,7 @@
                                 }
                             ],
                             "horizontalAlignment": "Left"
-                        }
-                    ],
-                    "width": "stretch"
-                }
-            ],
-            "style": "default"
-        },
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
+                        },
                         {
                             "type": "Container",
                             "$data": "${testcases}",
@@ -100,8 +101,7 @@
                                     "type": "TextBlock",
                                     "text": "${name}",
                                     "size": "Medium",
-                                    "wrap": true,
-                                    "color": "${if(failure == null, 'default', 'attention')}"
+                                    "wrap": true
                                 },
                                 {
                                     "type": "TextBlock",
@@ -114,16 +114,97 @@
                                     "text": "${file}",
                                     "isSubtle": true,
                                     "size": "Medium",
-                                    "isVisible": "${failure != null}"
+                                    "isVisible": false
                                 }
                             ],
-                            "separator": true,
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "role": "MenuItem"
-                            }
+                            "separator": true
                         }
-                    ]
+                    ],
+                    "rtl": false
+                },
+                {
+                    "type": "CarouselPage",
+                    "items": [
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Total: ${tests}",
+                                            "size": "Medium",
+                                            "weight": "Bolder",
+                                            "isSubtle": false,
+                                            "spacing": "Medium",
+                                            "horizontalAlignment": "Left"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Failures: ${failures}",
+                                            "size": "Medium",
+                                            "weight": "Bolder",
+                                            "isSubtle": false,
+                                            "spacing": "Medium",
+                                            "color": "Attention",
+                                            "horizontalAlignment": "Left"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Time: ${time}",
+                                            "size": "Medium",
+                                            "weight": "Bolder",
+                                            "isSubtle": false,
+                                            "spacing": "Medium",
+                                            "horizontalAlignment": "Left"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "horizontalAlignment": "Left"
+                        },
+                        {
+                            "type": "Container",
+                            "$data": "${testcases}",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${name}",
+                                    "size": "Medium",
+                                    "wrap": true
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${classname}",
+                                    "isSubtle": true,
+                                    "size": "Medium"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${file}",
+                                    "isSubtle": true,
+                                    "size": "Medium",
+                                    "isVisible": false
+                                }
+                            ],
+                            "separator": true
+                        }
+                    ],
+                    "rtl": false
                 }
             ]
         }
