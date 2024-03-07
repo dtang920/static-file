@@ -65,6 +65,7 @@
                                         {
                                             "type": "Column",
                                             "width": "stretch",
+                                            "bleed": true,
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
@@ -101,7 +102,8 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": "auto",
+                                            "width": "stretch",
+                                            "bleed": true,
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
