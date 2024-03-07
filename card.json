@@ -112,6 +112,19 @@
                                                     "weight": "Bolder"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "bleed": true,
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "ABC ${$index}",
+                                                    "size": "Medium",
+                                                    "weight": "Bolder"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
