@@ -69,6 +69,7 @@
                                                     "columns": [
                                                         {
                                                             "type": "Column",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -80,6 +81,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -91,6 +93,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -103,6 +106,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
+                                                            "width": 30,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
