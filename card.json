@@ -70,7 +70,7 @@
                                                     "columns": [
                                                         {
                                                             "type": "Column",
-                                                            "width": "auto",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -82,7 +82,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
-                                                            "width": "auto",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -94,7 +94,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
-                                                            "width": "auto",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -107,7 +107,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
-                                                            "width": "auto",
+                                                            "width": 25,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
