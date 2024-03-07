@@ -69,7 +69,7 @@
                                                     "columns": [
                                                         {
                                                             "type": "Column",
-                                                            "width": 40,
+                                                            "width": 100,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
