@@ -49,8 +49,8 @@
                                 "type": "Action.ToggleVisibility",
                                 "title": "Previous",
                                 "targetElements": [
-                                    "img_set_2",
-                                    "img_set_1"
+                                    "img_set_1",
+                                    "${concat('img_set_',$index)}",
                                 ]
                             },
                             "style": "emphasis"
@@ -120,7 +120,7 @@
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
-                                                    "text": "ABC ${$index}",
+                                                    "text": "dev ${$index}",
                                                     "size": "Medium",
                                                     "weight": "Bolder"
                                                 }
@@ -196,8 +196,8 @@
                                 "type": "Action.ToggleVisibility",
                                 "title": "Next",
                                 "targetElements": [
-                                    "img_set_1",
-                                    "img_set_2"
+                                    "${concat('img_set_',$index)}",
+                                    "${concat('img_set_',$index + 1)}"
                                 ]
                             },
                             "style": "emphasis"
@@ -207,6 +207,7 @@
             ],
             "bleed": true,
             "spacing": "None",
+            "isVisible": "equals($index, 0)"
             "id": "${concat('img_set_',$index)}"
         }
     ]
