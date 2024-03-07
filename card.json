@@ -171,7 +171,8 @@
                                     "horizontalAlignment": "Left"
                                 }
                             ],
-                            "bleed": true
+                            "bleed": true,
+                            "width": "800px"
                         },
                         {
                             "type": "Column",
