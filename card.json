@@ -60,7 +60,7 @@
                                 },
                                 {
                                     "type": "Column",
-                                    "width": "stretch",
+                                    "width": 100,
                                     "items": [
                                         {
                                             "type": "Container",
@@ -107,7 +107,7 @@
                                                         },
                                                         {
                                                             "type": "Column",
-                                                            "width": 25,
+                                                            "width": 30,
                                                             "items": [
                                                                 {
                                                                     "type": "TextBlock",
@@ -200,7 +200,9 @@
                     "spacing": "None",
                     "id": "img_set_1"
                 }
-            ]
+            ],
+            "rtl": false
         }
-    ]
+    ],
+    "fallbackText": "dssddsds"
 }
