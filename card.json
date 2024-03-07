@@ -63,7 +63,7 @@
                                     "columns": [
                                         {
                                             "type": "Column",
-                                            "width": "stretch",
+                                            "width": "auto",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
@@ -75,7 +75,7 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": "stretch",
+                                            "width": "auto",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
@@ -87,7 +87,7 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": "stretch",
+                                            "width": "auto",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
@@ -100,7 +100,7 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": 100,
+                                            "width": "auto",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
