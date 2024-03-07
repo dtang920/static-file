@@ -100,7 +100,7 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": "stretch",
+                                            "width": 100,
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
