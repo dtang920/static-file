@@ -60,7 +60,7 @@
                                 },
                                 {
                                     "type": "Column",
-                                    "width": 100,
+                                    "width": "auto",
                                     "items": [
                                         {
                                             "type": "Container",
