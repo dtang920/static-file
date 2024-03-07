@@ -171,7 +171,7 @@
                                     "horizontalAlignment": "Left"
                                 }
                             ],
-                            "bleed": true,
+                            "bleed": true
                         },
                         {
                             "type": "Column",
