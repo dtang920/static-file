@@ -207,7 +207,7 @@
             ],
             "bleed": true,
             "spacing": "None",
-            "isVisible": "equals($index, 0)"
+            "isVisible": "equals($index, 0)",
             "id": "${concat('img_set_',$index)}"
         }
     ]
