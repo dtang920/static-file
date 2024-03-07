@@ -145,14 +145,14 @@
                                                 {
                                                     "type": "TextBlock",
                                                     "text": "${failure.message}",
-                                                    "size": "Small",
+                                                    "size": "Medium",
                                                     "isSubtle": true,
                                                     "wrap": true
                                                 },
                                                 {
                                                     "type": "TextBlock",
                                                     "text": "${failure.type}",
-                                                    "size": "Small",
+                                                    "size": "Medium",
                                                     "isSubtle": true,
                                                     "wrap": true
                                                 },
