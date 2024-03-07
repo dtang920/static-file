@@ -50,7 +50,7 @@
                                 "title": "Previous",
                                 "targetElements": [
                                     "img_set_1",
-                                    "${concat('img_set_',$index)}",
+                                    "${concat('img_set_',$index)}"
                                 ]
                             },
                             "style": "emphasis"
