@@ -57,13 +57,14 @@
                         },
                         {
                             "type": "Column",
+                            "width": "stretch"
                             "items": [
                                 {
                                     "type": "ColumnSet",
                                     "columns": [
                                         {
                                             "type": "Column",
-                                            "width": "auto",
+                                            "width": "stretch",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
@@ -75,7 +76,7 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": "auto",
+                                            "width": "stretch",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
@@ -87,7 +88,7 @@
                                         },
                                         {
                                             "type": "Column",
-                                            "width": "auto",
+                                            "width": "stretch",
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
