@@ -194,7 +194,7 @@
             ],
             "bleed": true,
             "spacing": "None",
-            "id": "${concat('img_set_', $index)}"
+            "id": "${$index}"
         }
     ]
 }
