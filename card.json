@@ -101,7 +101,7 @@
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
-                                                    "text": "Time: ${time}",
+                                                    "text": "Time: ${round(time, 2)}",
                                                     "size": "Medium",
                                                     "weight": "Bolder"
                                                 }
