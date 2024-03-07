@@ -39,157 +39,168 @@
             "$data": "${testsuites}",
             "items": [
                 {
-                    "type": "ColumnSet",
-                    "columns": [
+                    "type": "Container",
+                    "items": [
                         {
-                            "type": "Column",
-                            "width": "20px",
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Previous",
-                                "targetElements": [
-                                    "img_set_2",
-                                    "img_set_1"
-                                ]
-                            },
-                            "style": "emphasis"
-                        },
-                        {
-                            "type": "Column",
-                            "items": [
+                            "type": "ColumnSet",
+                            "columns": [
                                 {
-                                    "type": "ColumnSet",
-                                    "columns": [
-                                        {
-                                            "type": "Column",
-                                            "width": 30,
-                                            "items": [
-                                                {
-                                                    "type": "TextBlock",
-                                                    "text": "TestSuite: ${name}",
-                                                    "size": "Medium",
-                                                    "weight": "Bolder"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "Column",
-                                            "width": 20,
-                                            "items": [
-                                                {
-                                                    "type": "TextBlock",
-                                                    "text": "Total: ${tests}",
-                                                    "size": "Medium",
-                                                    "weight": "Bolder"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "Column",
-                                            "width": 20,
-                                            "items": [
-                                                {
-                                                    "type": "TextBlock",
-                                                    "text": "Failures: ${failures}",
-                                                    "size": "Medium",
-                                                    "weight": "Bolder",
-                                                    "color": "Attention"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "Column",
-                                            "width": 30,
-                                            "items": [
-                                                {
-                                                    "type": "TextBlock",
-                                                    "text": "Time: ${round(time, 2)}",
-                                                    "size": "Medium",
-                                                    "weight": "Bolder"
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "type": "Column",
+                                    "width": "20px",
+                                    "verticalContentAlignment": "Center",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "title": "Previous",
+                                        "targetElements": [
+                                            "img_set_2",
+                                            "img_set_1"
+                                        ]
+                                    },
+                                    "style": "emphasis"
                                 },
                                 {
-                                    "type": "Container",
-                                    "$data": "${ where (testcases, case, case.failure != null) }",
+                                    "type": "Column",
+                                    "width": "stretch",
                                     "items": [
                                         {
-                                            "type": "TextBlock",
-                                            "text": "Name: ${name}",
-                                            "size": "Medium",
-                                            "wrap": true,
-                                            "color": "${if(failure == null, 'default', 'attention')}"
-                                        },
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "Classname: ${classname}",
-                                            "isSubtle": true,
-                                            "size": "Medium"
-                                        },
-                                        {
-                                            "type": "TextBlock",
-                                            "text": "${file}",
-                                            "isSubtle": true,
-                                            "size": "Medium"
-                                        },
-                                        {
                                             "type": "Container",
-                                            "$when": "${failure != null}",
                                             "items": [
                                                 {
-                                                    "type": "TextBlock",
-                                                    "text": "${failure.message}",
-                                                    "size": "Small",
-                                                    "isSubtle": true,
-                                                    "wrap": true
+                                                    "type": "ColumnSet",
+                                                    "columns": [
+                                                        {
+                                                            "type": "Column",
+                                                            "width": "stretch",
+                                                            "items": [
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "TestSuite: ${name}",
+                                                                    "size": "Medium",
+                                                                    "weight": "Bolder"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Column",
+                                                            "width": "stretch",
+                                                            "items": [
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "Total: ${tests}",
+                                                                    "size": "Medium",
+                                                                    "weight": "Bolder"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Column",
+                                                            "width": "stretch",
+                                                            "items": [
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "Failures: ${failures}",
+                                                                    "size": "Medium",
+                                                                    "weight": "Bolder",
+                                                                    "color": "Attention"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Column",
+                                                            "width": "stretch",
+                                                            "items": [
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "Time: ${round(time, 2)}",
+                                                                    "size": "Medium",
+                                                                    "weight": "Bolder"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 },
                                                 {
-                                                    "type": "TextBlock",
-                                                    "text": "${failure.type}",
-                                                    "size": "Small",
-                                                    "isSubtle": true,
-                                                    "wrap": true
-                                                },
-                                                {
-                                                    "type": "TextBlock",
-                                                    "text": "${failure.text}",
-                                                    "size": "Small",
-                                                    "isSubtle": true,
-                                                    "wrap": true
+                                                    "type": "Container",
+                                                    "$data": "${ where (testcases, case, case.failure != null) }",
+                                                    "items": [
+                                                        {
+                                                            "type": "TextBlock",
+                                                            "text": "Name: ${name}",
+                                                            "size": "Medium",
+                                                            "wrap": true,
+                                                            "color": "${if(failure == null, 'default', 'attention')}"
+                                                        },
+                                                        {
+                                                            "type": "TextBlock",
+                                                            "text": "Classname: ${classname}",
+                                                            "isSubtle": true,
+                                                            "size": "Medium"
+                                                        },
+                                                        {
+                                                            "type": "TextBlock",
+                                                            "text": "${file}",
+                                                            "isSubtle": true,
+                                                            "size": "Medium"
+                                                        },
+                                                        {
+                                                            "type": "Container",
+                                                            "$when": "${failure != null}",
+                                                            "items": [
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "${failure.message}",
+                                                                    "size": "Small",
+                                                                    "isSubtle": true,
+                                                                    "wrap": true
+                                                                },
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "${failure.type}",
+                                                                    "size": "Small",
+                                                                    "isSubtle": true,
+                                                                    "wrap": true
+                                                                },
+                                                                {
+                                                                    "type": "TextBlock",
+                                                                    "text": "${failure.text}",
+                                                                    "size": "Small",
+                                                                    "isSubtle": true,
+                                                                    "wrap": true
+                                                                }
+                                                            ],
+                                                            "style": "accent"
+                                                        }
+                                                    ],
+                                                    "separator": true,
+                                                    "horizontalAlignment": "Left"
                                                 }
-                                            ],
-                                            "style": "accent"
+                                            ]
                                         }
                                     ],
-                                    "separator": true,
-                                    "horizontalAlignment": "Left"
+                                    "bleed": true
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "20px",
+                                    "verticalContentAlignment": "Center",
+                                    "selectAction": {
+                                        "type": "Action.ToggleVisibility",
+                                        "title": "Next",
+                                        "targetElements": [
+                                            "img_set_1",
+                                            "img_set_2"
+                                        ]
+                                    },
+                                    "style": "emphasis"
                                 }
-                            ],
-                            "bleed": true
-                        },
-                        {
-                            "type": "Column",
-                            "width": "20px",
-                            "verticalContentAlignment": "Center",
-                            "selectAction": {
-                                "type": "Action.ToggleVisibility",
-                                "title": "Next",
-                                "targetElements": [
-                                    "img_set_1",
-                                    "img_set_2"
-                                ]
-                            },
-                            "style": "emphasis"
+                            ]
                         }
-                    ]
+                    ],
+                    "bleed": true,
+                    "spacing": "None",
+                    "id": "img_set_1"
                 }
-            ],
-            "bleed": true,
-            "spacing": "None",
-            "id": "img_set_1"
+            ]
         }
     ]
 }
