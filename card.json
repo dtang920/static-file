@@ -158,7 +158,8 @@
                                                 },
                                                 {
                                                     "type": "TextBlock",
-                                                    "text": "${failure.text}",
+                                                    "$data": "${split(failure.text, '\n')}",
+                                                    "text": "${$data}",
                                                     "size": "Small",
                                                     "isSubtle": true,
                                                     "wrap": true
@@ -171,7 +172,8 @@
                                     "horizontalAlignment": "Left"
                                 }
                             ],
-                            "bleed": true
+                            "bleed": true,
+                            "width": "800px"
                         },
                         {
                             "type": "Column",
