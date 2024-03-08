@@ -49,7 +49,7 @@
                                 "type": "Action.ToggleVisibility",
                                 "title": "Previous",
                                 "targetElements": [
-                                    "${concat('img_set_',$index - 1)}",
+                                    "${if (equals($index, 0),concat('img_set_',count($root)-1), concat('img_set_',$index - 1))}",
                                     "${concat('img_set_',$index)}"
                                 ]
                             },
@@ -120,7 +120,7 @@
                                             "items": [
                                                 {
                                                     "type": "TextBlock",
-                                                    "text": "dev ${$index}",
+                                                    "text": "AA equals($index, 0)",
                                                     "size": "Medium",
                                                     "weight": "Bolder"
                                                 }
@@ -197,7 +197,7 @@
                                 "title": "Next",
                                 "targetElements": [
                                     "${concat('img_set_',$index)}",
-                                    "${concat('img_set_',$index + 1)}"
+                                    "${if (equals($index, count($root)-1), 'img_set_0', concat('img_set_',$index + 1))}"
                                 ]
                             },
                             "style": "emphasis"
@@ -207,7 +207,7 @@
             ],
             "bleed": true,
             "spacing": "None",
-            "isVisible": "equals($index, 0)",
+            "isVisible": "${if (equals($index, 0), 'true', 'false')}",
             "id": "${concat('img_set_',$index)}"
         }
     ]
