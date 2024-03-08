@@ -112,19 +112,6 @@
                                                     "weight": "Bolder"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "type": "Column",
-                                            "width": "stretch",
-                                            "bleed": true,
-                                            "items": [
-                                                {
-                                                    "type": "TextBlock",
-                                                    "text": "AA equals($index, 0)",
-                                                    "size": "Medium",
-                                                    "weight": "Bolder"
-                                                }
-                                            ]
                                         }
                                     ]
                                 },
